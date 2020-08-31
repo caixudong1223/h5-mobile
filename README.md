@@ -1,2 +1,3 @@
-# h5-mobile
-基于vue-cli3的移动端h5项目脚手架
+# hellozj-activity
+
+工程师技能大赛报名活动
