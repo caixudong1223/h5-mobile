@@ -1,9 +1,7 @@
 const port = 80
 
-// const isProd = process.env.NODE_ENV === "production"
-
 module.exports = {
-  publicPath: "/game/",
+  publicPath: "/",
   lintOnSave: false,
   devServer: {
     port: port,

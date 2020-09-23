@@ -17,3 +17,10 @@ export const isWeiXin = function() {
   }
   return rst;
 };
+
+/**
+ * @description 验证手机号
+ */
+export const validateMobile = function(s) {
+  return /^1[3456789]\d{9}$/.test(s);
+};

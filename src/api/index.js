@@ -1,6 +1,5 @@
 import http from "../utils/http";
 import api from "./base";
-console.log(http);
 export default {
   getSmsCode: (data) =>
     http.post(`${api.base}/hellozj-login/sms/getSmsCode`, data),
