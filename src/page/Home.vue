@@ -38,7 +38,7 @@ export default {
 // }
 
 .container {
-  width: 100vh;
+  height: 100vh;
   background: #fff;
   margin: 0 auto;
   display: flex;

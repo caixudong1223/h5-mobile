@@ -1,4 +1,5 @@
-const port = 80
+// const SkeletonWebpackPlugin = ;
+const port = 80;
 
 module.exports = {
   publicPath: "/",
@@ -33,5 +34,19 @@ module.exports = {
         ],
       },
     },
+  },
+  configureWebpack: (config) => {
+    // vue骨架屏插件配置
+    config.plugins.push(
+      new require("vue-skeleton-webpack-plugin")({
+        webpackConfig: {
+          entry: {
+            app: path.join(__dirname, "./src/entry-skeleton.js"),
+          },
+        },
+        minimize: true,
+        quiet: true,
+      })
+    );
   },
 };
